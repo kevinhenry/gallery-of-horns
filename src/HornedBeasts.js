@@ -1,19 +1,40 @@
 import React from 'react';
-import './HornedBeasts.css';
+import Button from 'react-bootstrap/Button';
+import { AiFillHeart } from 'react-icons/ai';
 
 class HornedBeasts extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      numberOfHearts: 0
+    }
+  }
+
+
+  buttonClicked = () => {
+    this.setState({
+      numberOfHearts: this.state.numberOfHearts + 1
+    });
+
+  }
 
   render() {
-    console.log(this.props);
     return (
-      <div>  
-        <h2>{this.props.name}</h2>
-        <img title={this.props.name} alt={this.props.name + " image"} src={this.props.imgUrl} ></img>
-        {/* src="https://hammer.ucla.edu/sites/default/files/styles/archive_artwork/public/migrated-assets/media/Digital_archives/Loss_and_Restitution/Artwork/1956.4.39.jpg?itok=g-uV4ycs" alt="skulls with horns" title="March or Horned Beast"/>; */}
-        {/* <p>Skulls and horns intwined</p> */}
-        <p>{this.props.description}</p>
-      </div>
-    )
+        <Card style={{ width: '30rem' }}>
+          <Card.Img variant="top" src={this.prop.image_url} style={{ width: '100%' }}/>
+          <Card.Body>
+            <Card.Title>{this.props.title}</Card.Title>
+            <Card.Text>
+              {this.props.description}
+              <div><AiFillHeart />{this.state.numberOfHearts}</div>
+            </Card.Text>
+            <Button onClick={this.buttonClicked} variant="secondary" size="lg block">
+              This is my favorite Horned Beast!
+            </Button>
+          </Card.Body>
+        </Card>
+    );
   }
 }
 
