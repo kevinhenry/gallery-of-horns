@@ -1,4 +1,14 @@
-# Feature #1: Display images
+# Number and name of feature
+
+## Feature 1: Display images
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
 
 Why are we implementing this feature?
 As a user, I want to view the images on the page so that I can browse the photo collection.
@@ -9,7 +19,17 @@ Then the photo gallery should display all of the images in the gallery
 
 How are we implementing it?
 The Main component should pass props for the title, image and description to each HornedBeast component. You will find this information in the provided JSON file.
-Feature #2: Allow users to vote for their favorite beast
+
+## Feature 2: Allow users to vote for their favorite beast
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
 Why are we implementing this feature?
 As a user, I want to be able to interact with the site and pick my favorite beast.
 What are we going to implement?
@@ -20,7 +40,16 @@ Create state inside of the HornedBeast component that keeps track of the number 
 
 Put a heart in each horned beast with the number of times it was “favorited” next to it.
 
-Feature 3: Bootstrap
+## Feature 3: Bootstrap
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
 Why are we implementing this feature?
 As a user, I want to see a visually pleasing application that is also reponsive when I view this application on different screen sizes.
 What are we going to implement?
