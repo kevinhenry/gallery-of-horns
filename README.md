@@ -1,19 +1,44 @@
 # Number and name of feature
 
-## Feature 1: Display images
+## Demo 3
 
-Estimate of time needed to complete: _____
+## Feature 1: Display a Modal
 
-Start time: _____
+Estimate of time needed to complete: _4 hours____
+
+Start time: _1 pm____
 
 Finish time: _____
 
 Actual time needed to complete: _____
 
 Why are we implementing this feature?
+As a user, I want the image to be displayed in a larger size and with the description shown so that I can view the details of a single image.
+
+What are we going to implement?
+Given that a user wants to view the details of the image
+
+When the user clicks on an individual image
+Then the image should render larger on the screen with the description displayed
+
+## Demo 2
+
+## Feature 1: Display images
+
+Estimate of time needed to complete: _3 hours____
+
+Start time: _8 pm____
+
+Finish time: _12 am____
+
+Actual time needed to complete: _4 hours____
+
+Why are we implementing this feature?
 As a user, I want to view the images on the page so that I can browse the photo collection.
+
 What are we going to implement?
 Given that a user opens the application in the browser
+
 When the user navigates to the home page
 Then the photo gallery should display all of the images in the gallery
 
