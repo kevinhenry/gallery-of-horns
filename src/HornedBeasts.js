@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 import { AiFillHeart } from 'react-icons/ai';
 
 class HornedBeasts extends React.Component {
@@ -22,7 +23,7 @@ class HornedBeasts extends React.Component {
   render() {
     return (
         <Card style={{ width: '30rem' }}>
-          <Card.Img variant="top" src={this.prop.image_url} style={{ width: '100%' }}/>
+          <Card.Img variant="top" src={this.props.image_url} style={{ width: '100%' }} />
           <Card.Body>
             <Card.Title>{this.props.title}</Card.Title>
             <Card.Text>
@@ -31,7 +32,7 @@ class HornedBeasts extends React.Component {
             </Card.Text>
             <Button onClick={this.buttonClicked} variant="secondary" size="lg block">
               This is my favorite Horned Beast!
-            </Button>
+          </Button>
           </Card.Body>
         </Card>
     );

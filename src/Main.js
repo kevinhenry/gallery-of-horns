@@ -1,9 +1,9 @@
 import React from 'react';
-import CardColumns from 'react-bootstrap/CardDeck';
+import CardColumns from 'react-bootstrap/CardColumns';
+import data from './data.json';
 import HornedBeasts from './HornedBeasts';
 
 import './Main.css';
-import data from './data.json';
 
 class Main extends React.Component {
   render() {
@@ -13,16 +13,17 @@ class Main extends React.Component {
           title = {animal.title}
           image_url = {animal.image_url}
           description = {animal.description}
-          />
-      });
+        />
+        
+    });
   
-      return (
-        <main>
-          <CardColumns>
+    return (
+      <main>
+        <CardColumns>
           {beastArray}
-          </CardColumns>
-        </main>
-      );
+        </CardColumns>
+      </main>
+    );
 
   }
 }

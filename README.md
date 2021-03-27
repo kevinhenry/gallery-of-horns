@@ -1,15 +1,60 @@
-# Feature #1: Display images
+# Number and name of feature
+
+## Demo 3
+
+## Feature 1: Display a Modal
+
+Estimate of time needed to complete: _4 hours____
+
+Start time: _1 pm____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+Why are we implementing this feature?
+As a user, I want the image to be displayed in a larger size and with the description shown so that I can view the details of a single image.
+
+What are we going to implement?
+Given that a user wants to view the details of the image
+
+When the user clicks on an individual image
+Then the image should render larger on the screen with the description displayed
+
+## Demo 2
+
+## Feature 1: Display images
+
+Estimate of time needed to complete: _3 hours____
+
+Start time: _8 pm____
+
+Finish time: _12 am____
+
+Actual time needed to complete: _4 hours____
 
 Why are we implementing this feature?
 As a user, I want to view the images on the page so that I can browse the photo collection.
+
 What are we going to implement?
 Given that a user opens the application in the browser
+
 When the user navigates to the home page
 Then the photo gallery should display all of the images in the gallery
 
 How are we implementing it?
 The Main component should pass props for the title, image and description to each HornedBeast component. You will find this information in the provided JSON file.
-Feature #2: Allow users to vote for their favorite beast
+
+## Feature 2: Allow users to vote for their favorite beast
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
 Why are we implementing this feature?
 As a user, I want to be able to interact with the site and pick my favorite beast.
 What are we going to implement?
@@ -20,7 +65,16 @@ Create state inside of the HornedBeast component that keeps track of the number 
 
 Put a heart in each horned beast with the number of times it was “favorited” next to it.
 
-Feature 3: Bootstrap
+## Feature 3: Bootstrap
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
 Why are we implementing this feature?
 As a user, I want to see a visually pleasing application that is also reponsive when I view this application on different screen sizes.
 What are we going to implement?
