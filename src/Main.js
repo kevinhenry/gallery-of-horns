@@ -3,7 +3,7 @@ import CardColumns from 'react-bootstrap/CardColumns';
 // import data from './data.json';
 import HornedBeasts from './HornedBeasts';
 
-// import './Main.css';
+import './Main.css';
 
 class Main extends React.Component {
   render () {
