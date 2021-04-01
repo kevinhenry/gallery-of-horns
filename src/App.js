@@ -16,7 +16,7 @@ class App extends React.Component {
       display: false,
       data: data,
       selectedBeast: {},
-      hornValue: "All"
+      hornValue: {},
     }
   }
 
@@ -37,9 +37,9 @@ class App extends React.Component {
       }
     }
 
-  purgeBeast = () => {
-    this.setState({ display: false });
-  }
+  // purgeBeast = () => {
+  //   this.setState({ display: false });
+  // }
   
   render () {
     return (
@@ -57,7 +57,7 @@ class App extends React.Component {
           display={this.state.display}
           hideBeast={this.hideModal}
           selectedBeast={this.state.selectedBeast}
-          purgeBeast={this.purgeBeast}
+          // purgeBeast={this.purgeBeast}
         />
 
         <Footer />

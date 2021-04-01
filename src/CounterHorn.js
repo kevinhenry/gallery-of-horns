@@ -1,7 +1,12 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
+// import data from './data.json';
 import Form from 'react-bootstrap/Form';
+
+// const oneHorn = data.filter(beast => beast.horn === 1);
+// const twoHorn = data.filter(beast => beast.horn === 2);
+// const hundredHorn = data.filter(beast => beast.horn === 100);
 
 class CounterHorn extends React.Component {
 
@@ -27,7 +32,7 @@ class CounterHorn extends React.Component {
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
-                <option>4</option>
+                <option>100</option>
               </Form.Control>
             </Form.Group>
         
