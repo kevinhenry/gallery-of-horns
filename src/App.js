@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import data from './data.json';
 import Footer from './Footer';
 import Header from './Header';
@@ -15,6 +16,7 @@ class App extends React.Component {
       display: false,
       data: data,
       selectedBeast: {},
+      hornValue: "All"
     }
   }
 
@@ -27,26 +29,37 @@ class App extends React.Component {
     this.setState({ display: false, selectedBeast: {} });
   }
 
-  // updateBeast = (name) => {
-  //   const beastProfile = data.find(beast => beast.title === name);
-  //   this.setState({ selectedBeast: beastProfile });
-  // }
+  filterBeast = (allBeast) => {
+    if (allBeast === "all") {
+      return this.setState({ hornValue: null })
+      } else {
+        this.setState({ hornValue: allBeast })
+      }
+    }
+
+  purgeBeast = () => {
+    this.setState({ display: false });
+  }
   
   render () {
     return (
       <div>
         <Header />
+
         <Main
           data={this.state.data}
-          // showModal={this.showModal}
-          // updateBeast={this.updateBeast}
+          filterBeast={this.filterbeast}
+          hornValue={this.state.hornValue}
           handleClick={this.showModal}
         />  
+
         <SelectedBeast
           display={this.state.display}
           hideBeast={this.hideModal}
           selectedBeast={this.state.selectedBeast}
+          purgeBeast={this.purgeBeast}
         />
+
         <Footer />
       </div>
     );
