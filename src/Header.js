@@ -6,7 +6,7 @@ class Header extends React.Component {
     return (
       <header>
         <h1>Gallery of Horns</h1>
-        <h2 className = "headerh2">You may click on the picture or the button benneth it</h2>
+        <h2 className = "headerh2">You may click on the button or the picture</h2>
       </header>
     );
   }
