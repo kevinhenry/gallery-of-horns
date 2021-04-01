@@ -15,17 +15,22 @@ class App extends React.Component {
       display: false,
       data: data,
       selectedBeast: {},
-    };
+    }
   }
 
-  showModal = () => {
-    this.setState({ display: !this.state.display });
+  showModal = (selectedBeast) => {
+    // this.setState({ display: !this.state.display });
+    this.setState({ display: true, selectedBeast: selectedBeast });
   }
   
-  updateBeast = (name) => {
-    const beastProfile = data.find(x => x.title === name);
-    this.setState({ selectedBeast: beastProfile });
+  hideModal = () => {
+    this.setState({ display: false, selectedBeast: {} });
   }
+
+  // updateBeast = (name) => {
+  //   const beastProfile = data.find(beast => beast.title === name);
+  //   this.setState({ selectedBeast: beastProfile });
+  // }
   
   render () {
     return (
@@ -33,12 +38,13 @@ class App extends React.Component {
         <Header />
         <Main
           data={this.state.data}
-          showModal={this.showModal}
-          updateBeast={this.updateBeast}
+          // showModal={this.showModal}
+          // updateBeast={this.updateBeast}
+          handleClick={this.showModal}
         />  
         <SelectedBeast
           display={this.state.display}
-          showModal={this.showModal}
+          hideBeast={this.hideModal}
           selectedBeast={this.state.selectedBeast}
         />
         <Footer />

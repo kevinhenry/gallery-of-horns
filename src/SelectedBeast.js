@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-
 import './SelectedBeast.css';
 
 class SelectedBeast extends React.Component {
@@ -11,7 +10,7 @@ class SelectedBeast extends React.Component {
       <div>
         <Modal
           show={this.props.display}
-          onHide={this.props.showModal}
+          onHide={this.props.hideBeast}
           aria-labelledby="contained-modal-title-vcenter"
           centered
         >
@@ -21,11 +20,11 @@ class SelectedBeast extends React.Component {
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <span><img src={this.props.selectedBeast.image_url} alt={this.props.selectedBeast.description} title={this.props.selectedBeast.title}/></span>
+            <img src={this.props.selectedBeast.image_url} alt={this.props.selectedBeast.description} title={this.props.selectedBeast.title}/>
             <p>{this.props.selectedBeast.description}</p>
           </Modal.Body>
           <Modal.Footer>
-            <Button onCLick={this.props.showModal}>Close</Button>
+            <Button onClick={this.props.hideBeast} variant="primary">Close</Button>
           </Modal.Footer>
         </Modal>
       </div>

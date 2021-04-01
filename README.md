@@ -8,9 +8,9 @@ Estimate of time needed to complete: _4 hours____
 
 Start time: _1 pm____
 
-Finish time: _____
+Finish time: __3/31/ at 9:30 pm___
 
-Actual time needed to complete: _____
+Actual time needed to complete: __too much. Syntex error kicked my butt for more than a day___
 
 Why are we implementing this feature?
 As a user, I want the image to be displayed in a larger size and with the description shown so that I can view the details of a single image.
@@ -47,13 +47,13 @@ The Main component should pass props for the title, image and description to eac
 
 ## Feature 2: Allow users to vote for their favorite beast
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: _2 hours__
 
-Start time: _____
+Start time: _8 pm____
 
-Finish time: _____
+Finish time: _12 pm____
 
-Actual time needed to complete: _____
+Actual time needed to complete: _3 hours____
 
 Why are we implementing this feature?
 As a user, I want to be able to interact with the site and pick my favorite beast.
@@ -67,13 +67,13 @@ Put a heart in each horned beast with the number of times it was “favorited”
 
 ## Feature 3: Bootstrap
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: _2 hours____
 
-Start time: _____
+Start time: _8 pm____
 
-Finish time: _____
+Finish time: _12 pm____
 
-Actual time needed to complete: _____
+Actual time needed to complete: _3 pm____
 
 Why are we implementing this feature?
 As a user, I want to see a visually pleasing application that is also reponsive when I view this application on different screen sizes.
